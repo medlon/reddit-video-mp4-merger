@@ -1,18 +1,12 @@
-**Javascript reddit video downloader and mp4 merger**
-**IMPORTANT**
-CREATE a new folder in the root directory called "**combinedVideosFolder**". If you don't, you wont be able to use the mp4s merger as it is set.
+# Reddit MP4 Video Merger
 
-**Usage & Description**
-This project intended easily to download ##**one reddit video at a time**## and/or merge them together.
-1) Go to a reddit video post
-2) Copy its link.
-    *(Optional)* You can make sure the link its correct by using a tool like Postman and running a get request.
-    *(Optional)* link.json  --> This should return an object
-3) Use: **node videoDownloader1Argument link**
-The video should be downloaded in the videos folder.
+## Description
+This project intended easily to download **one reddit video at a time** and/or merge them together.
 
-Additionally you can use the   mergevideosTerminalArguments.js  program, which is located in the *videos* folder to merge 2 or more videos.
-The result video with be located in the *combinedVideosFolder* folder.
-simply use:
-    **node mergevideosTerminalArguments.js video1.mp4 video2.mp4 video3.mp4**
-# Reddit-video-and-merger
+## Usage
+* Create and name the directory `combinedVideosFolder`. This is important for the program.
+* Go to a Reddit video post.
+* Copy its URL. Optionally, you can make sure the URL is correct by using a tool like `Postman` and running a `GET` request or copy the URL and append `.json` at the end, which returns a JSON object upon request.
+* Run ``node videoDownloader1Argument [url]``  
+
+* Additionally you can use the `mergevideosTerminalArguments.js`  program, which is located in the `videos` directory to merge tow or more videos and run `node mergevideosTerminalArguments.js [mp4s]`
